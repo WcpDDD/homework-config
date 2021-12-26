@@ -1,0 +1,11 @@
+apiVersion: v1
+data:
+  http-server.yaml: |-
+    app:
+      port: 80
+    handle:
+      next-service: http://http-server-service-2
+kind: ConfigMap
+metadata:
+  name: http-server-config-1
+  namespace: service-mesh
