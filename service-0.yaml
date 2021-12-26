@@ -4,7 +4,7 @@ data:
     app:
       port: 80
     handle:
-      next-service: http://http-server-service-1
+      next-service: http://http-server-service-1/trace
 kind: ConfigMap
 metadata:
   name: http-server-config-0
